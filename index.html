@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>NomadHQ — Виртуальный офис</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <title>NomadHQ — Виртуальный офис</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+
 <body>
-  <div class="office">
-    <img src="assets/2157239.png" alt="Офис" id="office-map">
-    <!-- Зоны-кнопки -->
-    <div class="zone watercooler" onclick="openJitsi('watercooler')"></div>
-    <div class="zone meeting-room" onclick="openJitsi('meeting')"></div>
-  </div>
+    <div class="office">
+        <img src="assets/2157239.png" alt="Офис" id="office-map">
+        <!-- Зоны-кнопки -->
+        <div class="zone watercooler" onclick="openJitsi('watercooler')"></div>
+        <div class="zone meeting-room" onclick="openJitsi('meeting')"></div>
+    </div>
 
-  <!-- Чат -->
-  <div id="chat">
-    <ul id="messages"></ul>
-    <input type="text" id="messageInput" placeholder="Напиши что-нибудь...">
-    <button onclick="sendMessage()">Отправить</button>
-  </div>
+    <!-- Чат -->
+    <div id="chat">
+        <ul id="messages"></ul>
+        <input type="text" id="messageInput" placeholder="Напиши что-нибудь...">
+        <button onclick="sendMessage()">Отправить</button>
+    </div>
 
-  <script src="js/firebase.js"></script>
+    <!-- Подключаем Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="js/firebase.js"></script>
 </body>
+
 </html>

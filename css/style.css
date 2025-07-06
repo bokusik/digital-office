@@ -1,52 +1,43 @@
 body {
-  font-family: 'Press Start 2P', cursive;
-  background: #000;
-  color: #0F0;
   margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
 }
 
-.office {
-  position: relative;
+#office-container {
   width: 100%;
-  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
 
 #office-map {
   width: 100%;
-}
-
-.zone {
-  position: absolute;
-  cursor: pointer;
-}
-
-.watercooler {
-  width: 100px;
-  height: 100px;
-  top: 200px;
-  left: 300px;
-  /* Прозрачная, но кликабельная */
-  background: rgba(0, 255, 0, 0.3);
+  border: 2px solid #00ff00;
 }
 
 #chat {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   width: 300px;
-  border: 4px solid #FFF;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
   padding: 10px;
 }
 
 #messages {
-  list-style: none;
-  padding: 0;
   height: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  margin-bottom: 10px;
 }
 
 #messageInput {
-  font-family: 'Press Start 2P', cursive;
   width: 70%;
   padding: 5px;
+  background: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
 }
