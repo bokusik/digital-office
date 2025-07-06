@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NomadHQ — Виртуальный офис</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="office">
+    <img src="assets/2157239.png" alt="Офис" id="office-map">
+    <!-- Зоны-кнопки -->
+    <div class="zone watercooler" onclick="openJitsi('watercooler')"></div>
+    <div class="zone meeting-room" onclick="openJitsi('meeting')"></div>
+  </div>
+
+  <!-- Чат -->
+  <div id="chat">
+    <ul id="messages"></ul>
+    <input type="text" id="messageInput" placeholder="Напиши что-нибудь...">
+    <button onclick="sendMessage()">Отправить</button>
+  </div>
+
+  <script src="js/firebase.js"></script>
+</body>
+</html>
